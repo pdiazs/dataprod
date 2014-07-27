@@ -1,0 +1,103 @@
+Windmill profit simulation
+========================================================
+author: Pedro Diaz Simal
+date: 25 July 2014
+
+The problem
+========================================================
+
+Windmill farms are affected by several sources of uncertainty
+
+- Environmental uncertainty
+- Technological uncertainty 
+- Consumption uncertainty
+- Institutional uncertainty (tariffs)
+- Financial Uncertainty
+- 
+
+the purpose of the app is to model uncertainty results
+
+Environmental & Consumption uncertainty
+========================================================
+
+The net profit of the firms is related with:
+
+- Energy consumption of the society measured in instant demand
+- Available energy production capacity
+- Resource availability in time
+- Price volatility in energy markets
+
+Those problems are modelled with
+- Expected profit rate
+- Volatility of expected profit rate
+
+Institutional uncertainty 
+========================================================
+
+The net profit of the firms is related with:
+
+- Effective tariffs fixed to protect consumers from price volatility
+- Public subsides to renewable production
+
+Those problems are modelled with
+- Real Tariffs reduction
+- Real Tariffs volatility
+
+Financial uncertainty 
+========================================================
+
+The net profit of the firms is related with:
+
+- Financial cost volatility
+- Uncertainty on new sources availability
+
+Those problems are modelled with
+- Monthly financial payments
+- monthly financial levies volatility
+
+
+Tecnological  uncertainty 
+========================================================
+
+The net profit of the firms is related with:
+
+- Effective investment cost
+
+
+Those problems are modelled with
+- Total investment cost
+- Total life of the project
+
+note that financial fees have to be determined as:
+
+\[month\_fin\_cost=\frac{Tot\_Invest}{12\,n\_years}\]
+
+
+
+Global uncertainty 
+========================================================
+
+The net profit of the firm is then obtained for a number of cases from 1 to 2000:
+
+
+Results 
+========================================================
+
+The net profit of the firm is then observed:
+- Temporal evolution for the determined scenario and the fixed trajectories
+- Monthly evolution of Proportion of positive  cases
+- Distribution of NPV cases for a  2% net rate of discount
+
+![alt text](fig1.png)
+
+Results 2
+========================================================
+
+The final net profit of the firm is then observed as a random variable:
+Example
+
+```{r, echo=FALSE}
+par(mfrow=c(1,2));rben<-rnorm(100000,mean=5, sd=2);Np<-rnorm(10000, 8,4);  hist(rben, breaks=75,xlim=c(0,20),freq=FALSE)
+ hist(Np, breaks=150,xlim=c(0,20),freq=FALSE)
+par(mfrow=c(1,1))     
+```
