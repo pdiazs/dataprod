@@ -97,8 +97,4 @@ The final net profit of the firm is then observed as a random variable:
 
 Example: a random profit rate may produce a net present value with different randomness.
 
-```{r, echo=FALSE}
-par(mfrow=c(1,2));rben<-rnorm(100000,mean=5, sd=2);Np<-rnorm(10000, 8,4);  hist(rben, breaks=75,xlim=c(0,20),freq=FALSE)
- hist(Np, breaks=150,xlim=c(0,20),freq=FALSE)
-par(mfrow=c(1,1))     
-```
+![plot of chunk unnamed-chunk-1](wind-figure/unnamed-chunk-1.png) 
