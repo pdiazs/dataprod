@@ -17,10 +17,12 @@ Windmill farms are affected by several sources of uncertainty
 
 the purpose of the app is to model uncertainty results
 
+the project is undergoing, this is just an attempt
+
 Environmental & Consumption uncertainty
 ========================================================
 
-The net profit of the firms is related with:
+The profit of the firms is related with:
 
 - Energy consumption of the society measured in instant demand
 - Available energy production capacity
@@ -34,7 +36,7 @@ Those problems are modelled with
 Institutional uncertainty 
 ========================================================
 
-The net profit of the firms is related with:
+The profit of the firms is related with:
 
 - Effective tariffs fixed to protect consumers from price volatility
 - Public subsides to renewable production
@@ -46,7 +48,7 @@ Those problems are modelled with
 Financial uncertainty 
 ========================================================
 
-The net profit of the firms is related with:
+The profit of the firms is related with:
 
 - Financial cost volatility
 - Uncertainty on new sources availability
@@ -59,7 +61,7 @@ Those problems are modelled with
 Tecnological  uncertainty 
 ========================================================
 
-The net profit of the firms is related with:
+The profit of the firms is related with:
 
 - Effective investment cost
 
@@ -72,7 +74,7 @@ note that financial fees have to be determined as:
 
 \[month\_fin\_cost=\frac{Tot\_Invest}{12\,n\_years}\]
 
-
+hence the analysis shows the gross profit of the project and interest rates have to be computed as expenses still to be paid
 
 Global uncertainty 
 ========================================================
@@ -93,7 +95,7 @@ The net profit of the firm is then observed:
 Results 2
 ========================================================
 
-The final net profit of the firm is then observed as a random variable:
+The final gross profit of the firm is then observed as a random variable:
 
 Example: a random profit rate may produce a net present value with different randomness.
 
